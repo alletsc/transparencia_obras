@@ -1,0 +1,9 @@
+﻿situacao,nova_situacao,descricao
+CANCELADO,Cancelada,"Obra que foi lançada no SISCOB mas não pode prosseguir por alguma inconsistência, sendo substituída no sistema;"
+CONTRATO_RESCINDIDO,Rescindida,"Obra com rescisão contratual, cancelamento do contrato entre as partes envolvidas;"
+DEVOLV_GARANTIA,Concluída,Obra finalizada e aceita pela Prefeitura;
+EXECUTANDO,Executando,"Obra sendo executada, em andamento, em construção;"
+PROC_AC_DEF,Concluída,Obra finalizada e aceita pela Prefeitura;
+PROC_AC_PROV,Em processo de aceitação,Obra com os serviços finalizados em processo de aceitação pela comissão que avaliará o cumprimento de todas as obrigações contratuais;
+REPACTUADA,Repactuada,Obra em que houve alteração na legislação tributária durante a vigência do contrato (desoneração);
+SUSPENSA,Suspensa,"Obra com execução suspensa, paralisada temporariamente ou por tempo indeterminado;"

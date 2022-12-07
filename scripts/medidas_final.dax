@@ -1,0 +1,28 @@
+objeto =
+var x = FIRSTNONBLANK('obra'[titulo], TRUE())
+return IF(ISFILTERED('obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+
+favorecido =
+var x = FIRSTNONBLANK('obra'[favorecido], TRUE())
+return IF(ISFILTERED('obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+executor =
+var x = FIRSTNONBLANK('orgao_executor'[orgao_executor], TRUE())
+return IF(ISFILTERED('orgao_executor') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+data_inicio =
+var x = FIRSTNONBLANK('situacao_datas'[data_inicio], TRUE())
+return IF(ISFILTERED('situacao_datas') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+
+situacao =
+var situacao = FIRSTNONBLANK('situacao_datas'[nova_situacao], TRUE())
+return IF(ISFILTERED('situacao_datas') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , situacao)
+
+
+% medido =
+var x = FIRSTNONBLANK('situacao_datas'[percentual_medido], TRUE())
+return IF(ISFILTERED('situacao_datas') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+

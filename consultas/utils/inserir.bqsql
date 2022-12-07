@@ -1,0 +1,15 @@
+-- inserir linha em `rj-segovi.transparencia_obras.sigla_orgaos`
+
+INSERT INTO `rj-segovi.transparencia_obras.sigla_orgaos` (`Sigla`, `nome_orgao`) VALUES ('S', 'Secretaria Municipal de Saúde');
+
+
+INSERT INTO
+  `rj-segovi.transparencia_obras.sigla_orgaos` (`string_field_0`,
+    `string_field_1`)
+VALUES
+  ('S', 'Secretaria Municipal de Saúde');
+
+
+-- RENOMEAR COLUNAS EM `rj-segovi.transparencia_obras.sigla_orgaos`
+ALTER TABLE `rj-segovi.transparencia_obras.sigla_orgaos` RENAME COLUMN `string_field_0` TO `Sigla`;
+ALTER TABLE `rj-segovi.transparencia_obras.sigla_orgaos` RENAME COLUMN `string_field_1` TO `nome_orgao`;

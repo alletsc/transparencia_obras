@@ -1,0 +1,36 @@
+total_obras = DISTINCTCOUNT(obra[id_obra])
+
+
+
+situacao =
+var situacao = FIRSTNONBLANK('obras work_dados_obra'[SITUACAO], TRUE())
+return IF(ISFILTERED('obras work_dados_obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , situacao)
+
+
+objeto =
+var x = FIRSTNONBLANK('obras work_dados_obra'[DS_TITULO], TRUE())
+return IF(ISFILTERED('obras work_dados_obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+
+final = CALCULATE(SUM('obras medicoes'[VL_FINAL]), 'obras work_nome_orgaos'[CD_OBRA])
+
+favorecido =
+var x = FIRSTNONBLANK('obras work_nome_orgaos'[NM_FAVORECIDO], TRUE())
+return IF(ISFILTERED('obras work_nome_orgaos') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+
+executor =
+var x = FIRSTNONBLANK('obras work_nome_orgaos'[executor_primeiro_nivel], TRUE())
+return IF(ISFILTERED('obras work_nome_orgaos') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+data_inicio =
+var x = FIRSTNONBLANK('obras work_dados_obra'[inicio_texto], TRUE())
+return IF(ISFILTERED('obras work_dados_obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+data_fim =
+var x = FIRSTNONBLANK('obras work_dados_obra'[data_fim_texto], TRUE())
+return IF(ISFILTERED('obras work_dados_obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
+
+% medido =
+var x = FIRSTNONBLANK('obras work_dados_obra'[pc_medido_texto], TRUE())
+return IF(ISFILTERED('obras work_dados_obra') = FALSE(), "Favor selecionar uma obra para exibir detalhamento." , x)
