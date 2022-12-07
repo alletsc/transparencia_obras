@@ -1,7 +1,0 @@
--- auxiliares
-
-SELECT * FROM `rj-segovi-dev.dashboard_obras.auxiliar_situacao`
-
-SELECT * FROM `rj-segovi-dev.dashboard_obras.auxiliar_sigla_orgao`
-
-SELECT * FROM `rj-segovi-dev.dashboard_obras.auxiliar_coordenadas_ap`
